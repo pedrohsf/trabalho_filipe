@@ -1,0 +1,1 @@
+trabalho maven padrões de projeto
