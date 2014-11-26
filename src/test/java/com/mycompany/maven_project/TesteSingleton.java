@@ -5,6 +5,7 @@
  */
 package com.mycompany.maven_project;
 
+import Naves.Factory;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -40,6 +41,14 @@ public class TesteSingleton {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    // @Test
-    // public void hello() {}
+   @Test
+    public void TesteSingleton() 
+    {
+        Factory a = Factory.GetFabrica();
+        Factory b = Factory.GetFabrica();
+        
+        assertEquals(a,b);
+    }
+    
+   
 }
