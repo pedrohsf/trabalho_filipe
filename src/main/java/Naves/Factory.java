@@ -10,6 +10,20 @@ package Naves;
  * @author Dillei
  */
 public class Factory {
+    
+    private static Factory fabricaDeNave;
+    
+    private Factory(){
+    }
+    
+    public static Factory GetFabrica(){
+        if(Factory.fabricaDeNave == null){
+            Factory.fabricaDeNave = new Factory();
+        }
+        return Factory.fabricaDeNave;
+    }
+    
+    
     public NavesAlien fabricarUmaNave(String nomeDaNave) throws NaveInvalidException
     {
         if(nomeDaNave.toLowerCase().equals("mammoth"))

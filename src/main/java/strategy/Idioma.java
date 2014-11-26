@@ -4,16 +4,14 @@
  * and open the template in the editor.
  */
 
-package com.mycompany.maven_project;
+package strategy;
 
 /**
  *
  * @author pedro
  */
-public class Ingles implements Idioma{
-
-    public void falar() {
-        System.out.println("We comming in peace.");
-    }
+public interface Idioma {
+    
+    public void falar();
     
 }
