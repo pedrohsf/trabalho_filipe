@@ -6,6 +6,8 @@
 
 package com.mycompany.maven_project;
 
+import Naves.NavesAlien;
+
 /**
  *
  * @author pedro
@@ -13,7 +15,10 @@ package com.mycompany.maven_project;
 public class Alien {
     
     private Idioma idioma;
-    
+    public void pilotarNave(NavesAlien naveAtual)
+    {
+        naveAtual.pilotarNaves();
+    }
     public Alien(){
         this.idioma = new Alienez();
     }
